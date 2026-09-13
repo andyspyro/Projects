@@ -1,0 +1,48 @@
+C and C++ Static Analysis
+Sanitized Flawfinder result summary
+
+Source analyzed: program.cpp
+Lines analyzed: 122
+Physical source lines of code: 86
+Findings at risk level 1 or higher: 31
+Highest reported risk level: 4
+
+Examples from the retained scan:
+
+strcat
+  CWE 120
+  Flawfinder warned that concatenation did not check the destination size.
+
+strcpy
+  CWE 120
+  Flawfinder warned about unchecked copies.
+  Some instances were lower risk because the source was a constant string.
+
+memcpy
+  CWE 120
+  The scan noted that the destination must be large enough for the source data.
+
+fixed size char arrays
+  CWE 119 / CWE 120
+  The scan warned that statically sized buffers can create overflow risk.
+
+strlen
+  CWE 126
+  The scan noted possible over reads when strings are not null terminated.
+
+strncpy
+  CWE 120
+  The scan warned that strncpy can be misused and does not always null terminate.
+
+system
+  CWE 78
+  The scan flagged command execution because shell invocation is difficult to use safely with untrusted input.
+
+fopen
+  CWE 362
+  The scan raised race and path manipulation questions around file opening.
+
+Important note from the original Flawfinder output:
+Not every hit is necessarily a security vulnerability.
+
+I kept that distinction in the public writeup. The tool output is a starting point for review, not proof of exploitability.

@@ -1,0 +1,60 @@
+# Security Engineering Projects
+
+This is the main repo for the engineering side of my work. I keep security architecture, secure software, automation, database work, mobile prototypes, and sanitized HR analytics projects here.
+
+I split application security and Hack The Box into separate repos so this one stays focused on things I built, designed, or automated.
+
+## Project map
+
+| Area | Project | What I actually did | Public proof |
+|---|---|---|---|
+| Security architecture | [Private Data Logging Security Design Review](security-design-review/README.md) | Reviewed a logging architecture, identified two design risks, prioritized them, and proposed a schema validation layer plus central policy enforcement | Sanitized design review |
+| Threat modeling | [Online Banking Security Architecture](online-banking-threat-model/README.md) | Recreated a banking DFD in IriusRisk, reviewed threats, mapped controls, and documented STRIDE based risks | Threat assessment, security requirements, methodology notes |
+| Secure software | [Secure Lo Fi Study Cafe](secure-lofi-study-cafe/README.md) | Built a Node.js and Express app with SQLite, Socket.IO, authentication, RBAC, CSRF protection, rate limiting, audit logging, and moderated music controls | `server.js`, `database.js`, `schema.sql`, `package.json` |
+| Static analysis | [C and C++ Static Analysis](cpp-static-analysis/README.md) | Ran Flawfinder against a C++ program, reviewed 31 findings, and separated tool warnings from actual risk | Sanitized Flawfinder summary |
+| Database team project | [Dating Application Database Team Project](dating-database-team-project/README.md) | Worked in a three person class team and served as the mock project manager while the group designed a database application | Project status and role documented; source is not public yet |
+| Python automation | [Nova Local Assistant](nova-local-assistant/README.md) | Built a local Python assistant with system diagnostics, research workflows, voice, Windows automation, and local model integration | Sanitized diagnostics source plus retained local versions |
+| HR data and automation | [HR Analytics and Automation](workforce-analytics-automation/README.md) | Built reporting logic, vacancy and hiring analysis, Excel VBA automation, reconciliation checks, workflow tracking, and recurring audits | Sanitized VBA sample and detailed project notes |
+| Android | [Android Mobile Prototypes](android-mobile-prototypes/README.md) | Built a Reply Time Tracker in Kotlin and Jetpack Compose and tested an HR workflow prototype on Android | Sanitized Kotlin source for the Reply Time Tracker |
+| Engineering research tooling | [Electrical Engineering Research Toolkit](electrical-engineering-research-toolkit/README.md) | Added engineering topic routing and stronger technical source selection inside Nova | Documentation is tied to retained Nova source; this is not a hardware build |
+
+## How I organize the repo
+
+```text
+security design
+    |
+    +--> threat modeling
+    +--> secure software
+    +--> static analysis
+
+automation
+    |
+    +--> Python
+    +--> VBA
+    +--> HR analytics
+    +--> mobile prototypes
+
+research tooling
+    |
+    +--> engineering source routing
+```
+
+## Related repos
+
+* [Application Security Labs](https://github.com/andyspyro/Application-security-labs)
+* [Offensive Security Labs](https://github.com/andyspyro/Offensive-Security-labs)
+* [Cybersecurity Portfolio](https://github.com/andyspyro/Cybersecurity-Portfolio)
+
+## Public data rules
+
+Everything here is sanitized before it goes public.
+
+* No employee or applicant names
+* No employee, position, requisition, or student IDs
+* No employer or facility identifiers
+* No production exports
+* No passwords, private keys, tokens, or API secrets
+* No Hack The Box flags
+* No copied instructor source code
+
+When I do not have the original source anymore, I say that instead of rebuilding something and pretending it is the original.
