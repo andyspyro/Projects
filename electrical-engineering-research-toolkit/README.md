@@ -1,39 +1,61 @@
-# Electrical Engineering & Hardware Build
+# Embedded Systems & Hardware Build
 
-> **Type:** Hands on hardware build with engineering research support  
-> **Work I did:** Physical assembly, wiring, lighting, body design, and technical research
+> **Type:** Hands-on embedded systems and hardware build with software development and engineering research support  
+> **Work I did:** Microcontroller programming, sensor integration, circuit and schematic design, UART/I²C/SPI communication, physical assembly, wiring, lighting, body design, and technical research
 
-This project was more than software research.
-
-I also worked on the **physical build**. I assembled and wired the hardware, set up the lighting, and designed the body. Nova was useful on the research side because I could use it to organize engineering questions and technical sources while I worked through the build.
+This project combined **software, embedded systems, electronics, and physical fabrication**. I did not only research the hardware — I built and programmed it.
 
 ## What I did
 
-### Hardware assembly
+### Microcontroller programming
 
-I worked directly with the physical components and put the build together rather than only researching how the system should work.
+I wrote the software that controlled the embedded hardware and worked directly with microcontroller logic rather than treating the electronics as a prebuilt black box.
 
-### Wiring
+### Sensor integration
 
-I handled the wiring needed for the project and worked through how the physical connections should be laid out.
+I worked with sensors as part of the system and handled the software/hardware integration needed to read from and coordinate those components.
 
-### Lighting
+### Circuit and schematic design
 
-I added and configured the lighting as part of the physical design.
+I designed the circuits and built schematics to plan how the components connected before and during the physical build.
 
-### Body design
+### Device communication
 
-I designed the body around the hardware so the finished project had an actual physical form instead of being a loose collection of components.
+I worked with common embedded communication interfaces:
 
-## Engineering research
+* **UART**
+* **I²C**
+* **SPI**
 
-I also used Nova to support the research side of the project.
+That meant understanding how devices exchange data, how the interfaces differ, and how the software and wiring have to line up for communication to work correctly.
 
-The retained Nova source contains topic routing and technical source selection for areas such as:
+### Embedded platforms
+
+I worked with:
+
+* **ESP32**
+* **Arduino**
+* **Raspberry Pi**
+
+These platforms were part of the embedded systems side of the project rather than just research topics.
+
+### Physical assembly and wiring
+
+I assembled and wired the hardware, worked through the physical connections, and integrated the electronics into the finished build.
+
+### Lighting and body design
+
+I added the lighting and designed the body around the hardware so the project had a finished physical form instead of remaining a collection of loose components.
+
+## Engineering research support
+
+I also used Nova to support the research side of the build.
+
+The retained Nova source contains engineering topic routing and technical source selection for areas such as:
 
 * ESP32
 * GPIO
-* I2C
+* I²C
 * SPI
 * UART
 * MPU6050
@@ -42,7 +64,7 @@ The retained Nova source contains topic routing and technical source selection f
 * motors
 * robotics
 
-That research tooling helped me get to technical documentation faster when I needed to understand embedded systems, interfaces, sensors, controllers, or hardware specifications.
+Nova helped me get to relevant technical documentation faster when I needed to understand an interface, component, controller, or hardware specification.
 
 ## How the pieces fit together
 
@@ -50,13 +72,19 @@ That research tooling helped me get to technical documentation faster when I nee
 engineering question
         |
         v
-Nova research tooling
+technical research / documentation
         |
         v
-technical documentation
+circuit + schematic design
         |
         v
-hardware decisions
+microcontroller software
+        |
+        v
+sensor + device integration
+        |
+        v
+UART / I²C / SPI communication
         |
         v
 physical assembly + wiring
@@ -65,15 +93,19 @@ physical assembly + wiring
 lighting + body design
 ```
 
-## What this project shows
+## What this project demonstrates
 
-This project combines two sides of my work:
+This project shows that I can work across the boundary between software and hardware:
 
-* hands on hardware assembly and wiring
-* software assisted engineering research
-
-I am not presenting the Nova research code as the hardware itself. The software helped with research, while the physical build involved actual assembly, wiring, lighting, and body design.
+* program microcontrollers
+* integrate sensors
+* design circuits and schematics
+* work with UART, I²C, and SPI
+* use ESP32, Arduino, and Raspberry Pi platforms
+* troubleshoot physical wiring and integration
+* build a finished physical system
+* use software tooling to support engineering research
 
 ## Public scope
 
-I am keeping this page focused on the parts I can describe safely and accurately. I am not adding component specifications, schematics, or implementation details that I cannot verify from the retained project material.
+I am keeping this page focused on work I can describe accurately without publishing material I cannot verify or should not expose. The project summary reflects the hardware, software, and embedded-systems work I actually performed.

@@ -16,7 +16,7 @@ I split application security and Hack The Box into separate repos so this one st
 | Python automation | [Nova Local Assistant](nova-local-assistant/README.md) | Built a local Python assistant with system diagnostics, research workflows, voice, Windows automation, and local model integration | Sanitized diagnostics source plus retained local versions |
 | HR data and automation | [HR Analytics and Automation](workforce-analytics-automation/README.md) | Built reporting logic, vacancy and hiring analysis, Excel VBA automation, reconciliation checks, workflow tracking, and recurring audits | Sanitized VBA sample and detailed project notes |
 | Android | [Android Mobile Prototypes](android-mobile-prototypes/README.md) | Built a Reply Time Tracker in Kotlin and Jetpack Compose and tested an HR workflow prototype on Android | Sanitized Kotlin source for the Reply Time Tracker |
-| Engineering research tooling | [Electrical Engineering Research Toolkit](electrical-engineering-research-toolkit/README.md) | Added engineering topic routing and stronger technical source selection inside Nova | Documentation is tied to retained Nova source; this is not a hardware build |
+| Embedded systems / hardware | [Embedded Systems & Hardware Build](electrical-engineering-research-toolkit/README.md) | Built and wired the physical hardware, programmed microcontrollers, integrated sensors, designed circuits and schematics, implemented UART/I²C/SPI communication, and worked across ESP32, Arduino, and Raspberry Pi platforms | Detailed project writeup plus retained Nova research tooling |
 
 ## How I organize the repo
 
@@ -33,6 +33,14 @@ automation
     +--> VBA
     +--> HR analytics
     +--> mobile prototypes
+
+embedded systems
+    |
+    +--> microcontrollers
+    +--> sensors
+    +--> UART / I²C / SPI
+    +--> circuit + schematic design
+    +--> hardware assembly
 
 research tooling
     |
